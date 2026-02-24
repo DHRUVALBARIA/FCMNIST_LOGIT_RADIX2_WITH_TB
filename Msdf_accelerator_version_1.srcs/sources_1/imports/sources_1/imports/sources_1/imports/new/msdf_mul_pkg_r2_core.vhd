@@ -7,13 +7,13 @@ package msdf_mul_pkg_r2_core is
   -- Radix-2 MSDF online multiplication parameters
   -- Digit set: {-1,0,+1} 
   --------------------------------------------------------------------
-  constant MSDF_RADIX       : integer := 2;
+  constant MSDF_RADIX       : integer := 2; 
   constant MSDF_A           : integer := 1;
 
   -- Online delays used in your project
-  constant ONLINE_DELAY_MUL : integer := 3;
+  constant ONLINE_DELAY_MUL : integer := 2;
   constant ONLINE_DELAY_ADD : integer := 2;
-
+ 
   --------------------------------------------------------------------
   -- Signed-digit encoding (2-bit two's complement)
   -- Legal: -1("11"), 0("00"), +1("01"); Illegal: -2("10")
@@ -37,9 +37,9 @@ package msdf_mul_pkg_r2_core is
 
   --------------------------------------------------------------------
   -- Fixed-point for residual w[j] and v[j]
-  --------------------------------------------------------------------
+  -------------------------------------------------------------- ------
   constant W_INT_BITS   : integer := 2;
-  constant W_FRAC_BITS  : integer := 12;
+  constant W_FRAC_BITS  : integer := 12; 
   constant W_TOTAL_BITS : integer := W_INT_BITS + W_FRAC_BITS;
 
   subtype w_fixed_t is signed(W_TOTAL_BITS-1 downto 0);

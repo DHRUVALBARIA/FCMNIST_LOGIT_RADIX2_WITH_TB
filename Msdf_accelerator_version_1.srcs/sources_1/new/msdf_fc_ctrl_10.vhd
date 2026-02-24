@@ -18,7 +18,7 @@ entity msdf_fc_ctrl_10 is
   generic (
     ACC_BITS_G    : positive := 40;
     BIAS_BITS_G   : positive := 16;
-    FLUSH_EXTRA_G : integer  := 4;
+    FLUSH_EXTRA_G : integer  := 2;
     SOFT_RESET_G  : boolean  := true
   );
   port (

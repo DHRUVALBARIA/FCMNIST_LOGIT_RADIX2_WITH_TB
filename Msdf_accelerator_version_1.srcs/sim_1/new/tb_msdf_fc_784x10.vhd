@@ -9,6 +9,7 @@
 --
 -- Important:
 --   Running only "1000ns" is usually too short. Use "run all" or "run 5 ms".
+-- Failed tb please refer the next one--- 
 -- ============================================================================
 
 library ieee;

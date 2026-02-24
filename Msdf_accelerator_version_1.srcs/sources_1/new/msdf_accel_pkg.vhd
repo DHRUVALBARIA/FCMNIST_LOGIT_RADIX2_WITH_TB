@@ -10,13 +10,15 @@ package msdf_accel_pkg is
   -- Index sizing helper (synthesizable)
   -- returns smallest r such that 2^r >= n
   -- ==========================================================================
-  function clog2_p(n : positive) return natural; 
+  function clog2_p(n : positive) return natural;  
 
   -- ==========================================================================
   -- Locked demo scope
   -- ==========================================================================
-  constant VEC_LEN  : integer := 784;
+  constant VEC_LEN  : integer := 784; 
   constant N_OUT    : integer := 10;
+  constant FLUSH_EXTRA_G : integer  := 2;
+ 
 
   -- ==========================================================================
   -- Locked precision knobs (Phase 1 decisions)
