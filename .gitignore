@@ -1,0 +1,21 @@
+# Ignore Vivado junk
+*.log
+*.jou
+*.str
+.Xil/
+*.pb
+*.os
+*.runs/
+*.gen/
+*.srcs/utils_1/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.bit
+*.bin
+*.mcs
+*~
+
+# Ensure .txt files are NOT ignored
+!*.txt
